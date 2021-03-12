@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+main {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .menu a {
+    flex-direction: column;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(151, 144, 151);
+    padding: 3px;
+}
+
+header .menu {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        align-items: center;
+        flex-direction: row;
+    }
+.header-bottom {
+    background: rgb(8, 8, 8)     
+}
+header .banner {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        align-items: center;
+        flex-direction: row;
+}
+.heme {
+    display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        align-items: center;
+        flex-direction: row;
+}
+.products-list {
+display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 4fr 4fr;
+
+
+}
+
+.text img{
+    background-image: url(../img/222.jfif);
+    background-size: cover;
+    background-position: center;
+    min-height: 780px;
+    width:  100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    max-width: 980px;
+    margin: auto;
+}
+.title {
+    color: var(--accent-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.title p{
+    font-size: 124px;
+    color: black;
+}
+
+
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: red ;
+}
+
+.button:hover {
+    color: #fdfdfd
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+.box {
+ display: grid ;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding: 80px;
+ grid-gap: 30px;
+ justify-content: center;
+
+    
+}
+.box_1 {
+ background-image: url(../img/new_arr_1.jpg);
+ background-size: cover;
+ display: block;
+ width: 570px;
+ height: 375px;
+ padding-right: 30px;
+
+ 
+}
+.box_1 p {
+    font-size: 50px;
+}
+.box_2 {
+ background-image: url(../img/new_ari.png);
+ background-size: cover;
+ display: block;
+ width: 270px;
+ height: 375px;
+ 
+}
+.box_3 {
+ background-image: url(../img/new_arri.jpg);
+ background-size: cover;
+ display: block;
+ width: 270px;
+ height: 375px;
+}
+hr {
+    height: 2px;
+    width: 18%;
+    background-color: #f40106;
+ border: 0;
+} 
+.box_1 p{
+ margin-top: 250px;
+ margin-left: 15px;
+}
+.box_2 p{
+ margin-top: 250px;
+ margin-left: 15px;
+}
+.box_3 p{
+ margin-top: 250px;
+ margin-left: 15px;
+}
+
+.box_1 hr {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.box_2 hr {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.box_3 hr {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.box hr  {
+ margin-left: 15px;
+}
+.box p{
+    margin-left: 15px;
+}
+.box button {
+     margin-left: 15px;
+}
+
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: red ;
+}
+
+.button:hover {
+    color: #fdfdfd
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
