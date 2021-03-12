@@ -18,37 +18,40 @@ header .menu a {
 }
 
 header .menu {
-        display: flex;
-        justify-content: space-around;
-        flex: 1;
-        align-items: center;
-        flex-direction: row;
-    }
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+    flex-direction: row;
+}
 .header-bottom {
+    box-sizing: content-box;
+    padding: 15px 35px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     background: rgb(8, 8, 8)     
 }
 header .banner {
-        display: flex;
-        justify-content: flex-end;
-        flex: 1;
-        align-items: center;
-        flex-direction: row;
-}
-.heme {
     display: flex;
-        justify-content: flex-start;
-        flex: 1;
-        align-items: center;
-        flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: center;
+    flex-direction: row;
+}
+header .home{
+    background-image: url(../img/logo.jpg);
+    background-size: cover;
+    display: flex;
+    width: 210px;
+    height: 49px;
+   
 }
 .products-list {
-display: grid;
-        grid-gap: 2px;
-        grid-template-columns: 4fr 4fr;
-
-
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 3fr 3fr;
 }
-
 .text img{
     background-image: url(../img/222.jfif);
     background-size: cover;
@@ -84,9 +87,6 @@ display: grid;
     font-size: 124px;
     color: black;
 }
-
-
-
 .button {
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
@@ -99,28 +99,16 @@ display: grid;
 }
 
 .button:hover {
-    color: #fdfdfd
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.card-button {
-    border-color: black;
-    color: black;
-}
-
-.card-button:hover {
+    color: #fdfdfd;
     background-color: black;
-    color: white;
+    cursor: pointer;
 }
 .box {
  display: grid ;
  grid-template-columns: 1fr 1fr 1fr;
  padding: 80px;
  grid-gap: 30px;
- justify-content: center;
-
-    
+ justify-content: center;   
 }
 .box_1 {
  background-image: url(../img/new_arr_1.jpg);
@@ -129,8 +117,6 @@ display: grid;
  width: 570px;
  height: 375px;
  padding-right: 30px;
-
- 
 }
 .box_1 p {
     font-size: 50px;
@@ -168,7 +154,6 @@ hr {
  margin-top: 250px;
  margin-left: 15px;
 }
-
 .box_1 hr {
    margin-top: 10px;
    margin-bottom: 10px;
@@ -188,13 +173,11 @@ hr {
     margin-left: 15px;
 }
 .box button {
-     margin-left: 15px;
+    margin-left: 15px;
 }
-
-
-.button {
+.box button {
     padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
+    border: none;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     color: #FFFFFF;
@@ -203,18 +186,8 @@ hr {
     background-color: red ;
 }
 
-.button:hover {
-    color: #fdfdfd
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.card-button {
-    border-color: black;
-    color: black;
-}
-
-.card-button:hover {
+.box button:hover {
+    color: #fdfdfd;
     background-color: black;
-    color: white;
+    cursor: pointer;
 }
