@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
+:root {
+    font-family: 'Merriweather', serif;
+    --main-color: white;
+    --secondary-color: #d60307;
+    --third-color: black;
+    --fourth-color: #555;
+    --fifth-color: #222323;
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +16,7 @@
 main {
     max-width: 980px;
     margin: auto;
+    
 }
 
 header .menu a {
@@ -52,77 +62,83 @@ header .home{
     grid-gap: 0px;
     grid-template-columns: 3fr 3fr;
 }
-.text img{
-    background-image: url(../img/222.jfif);
-    background-size: cover;
-    background-position: center;
-    min-height: 780px;
-    width:  100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.title{
-    max-width: 980px;
-    margin: auto;
-}
-.title {
-    color: var(--accent-color);
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-.title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-}
-.title p{
-    font-size: 124px;
-    color: black;
-}
-.button {
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    color: #FFFFFF;
-    text-align: center;
-    transition: color 0.7s;
-    background-color: red ;
+
+.header_banner{
+  background-image: url(../img/222.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px ;
 }
 
-.button:hover {
-    color: #fdfdfd;
-    background-color: black;
-    cursor: pointer;
+.header__banner_title {
+  font-family: "Merriweather", sans-serif;
+  color: var(--fourth-color);
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-.box {
+
+.header__banner_secondtitle {
+  font-family: "Merriweather", sans-serif;
+  font-size: 112px;
+  color: var(--fifth-color);
+  font-weight: 400;
+  line-height: 1.0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+.header__banner_secondtitle span {
+  color: var(--secondary-color);
+}
+
+.header__banner_button {
+   display: flex;
+   align-items: center;
+    justify-content: center;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 16px;
+  width: 160px;
+  height: 60px;
+  background-color: var(--secondary-color);
+  
+}
+
+.header__banner_button:hover {
+  background-color: #222323;
+  cursor: pointer;
+}
+
+h6{
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.benefits{
+    padding-top: 40px;
+    gap: 50px;
+}
+.main_box {
  display: grid ;
  grid-template-columns: 1fr 1fr 1fr;
  padding: 80px;
  grid-gap: 30px;
  justify-content: center;   
 }
-.box_1 {
- background-image: url(../img/new_arr_1.jpg);
+.main_box_main {
+ background-image: url("../img/new_arr_1.jpg");
  background-size: cover;
  display: block;
  width: 570px;
  height: 375px;
  padding-right: 30px;
 }
-.box_1 p {
-    font-size: 50px;
-}
 .box_2 {
- background-image: url(../img/new_ari.png);
+ background-image: url("../img/new_ari.png");
  background-size: cover;
  display: block;
  width: 270px;
@@ -130,7 +146,7 @@ header .home{
  
 }
 .box_3 {
- background-image: url(../img/new_arri.jpg);
+ background-image: url("../img/new_arri.jpg");
  background-size: cover;
  display: block;
  width: 270px;
@@ -175,19 +191,45 @@ hr {
 .box button {
     margin-left: 15px;
 }
-.box button {
-    padding: 0.35em 1.2em;
-    border: none;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    color: #FFFFFF;
-    text-align: center;
-    transition: color 0.7s;
-    background-color: red ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 870px) {
+    .benefits{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .benefits{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
-.box button:hover {
-    color: #fdfdfd;
-    background-color: black;
-    cursor: pointer;
-}
+.frame{
+    border-width:1;
+    border-color: rgb(190,190,190);
+    border-style: solid;
+    padding: 10px;
+    }
+
+    
