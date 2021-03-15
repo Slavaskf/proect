@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
 
 :root {
     font-family: 'Merriweather', serif;
@@ -13,12 +14,9 @@
     padding: 0;
     margin: 0;
 }
-main {
-    max-width: 980px;
-    margin: auto;
-    
+ul {
+  list-style-type: none;
 }
-
 header .menu a {
     flex-direction: column;
     text-decoration: none;
@@ -40,7 +38,7 @@ header .menu {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    background: rgb(8, 8, 8)     
+    background-color: var(--fifth-color)     
 }
 header .banner {
     display: flex;
@@ -50,7 +48,7 @@ header .banner {
     flex-direction: row;
 }
 header .home{
-    background-image: url(../img/logo.jpg);
+    background-image: url(../img/logo.svg);
     background-size: cover;
     display: flex;
     width: 210px;
@@ -64,21 +62,21 @@ header .home{
 }
 
 .header_banner{
-  background-image: url(../img/222.jfif);
+  background-image: url(../img/banner.jfif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 200px ;
 }
 
-.header__banner_title {
-  font-family: "Merriweather", sans-serif;
+.header_banner_title {
+  
   color: var(--fourth-color);
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.header__banner_secondtitle {
+.header_banner_secondtitle {
   font-family: "Merriweather", sans-serif;
   font-size: 112px;
   color: var(--fifth-color);
@@ -89,11 +87,11 @@ header .home{
   margin-bottom: 45px;
 }
 
-.header__banner_secondtitle span {
+.header_banner_secondtitle span {
   color: var(--secondary-color);
 }
 
-.header__banner_button {
+.header_banner_button {
    display: flex;
    align-items: center;
     justify-content: center;
@@ -106,14 +104,91 @@ header .home{
   
 }
 
-.header__banner_button:hover {
+.header_banner_button:hover {
   background-color: #222323;
   cursor: pointer;
 }
+.main_box {
+ display: flex;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding: 80px;
+ grid-gap: 30px;  
+ justify-content: center; 
+}
+.main_box_minorone {
+ background-image: url(../img/new-arrivals-bg.jpg);
+ background-size: cover;
+ display: block;
+ width: 570px;
+ height: 375px;
+ 
+}
+.main_box_minor {
+ background-image: url("../img/trainers-bg.png");
+ background-size: cover;
+ display: block;
+ width: 270px;
+ height: 375px;
+ 
+}
+.main_box_minortwo {
+ background-image: url("../img/hot-sale-bg.png");
+ background-size: cover;
+ display: block;
+ width: 270px;
+ height: 375px;
+}
+.button_box {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color:var(--fifth-color);
 
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.button_box:hover,
+.button_box:active {
+  
+  color: var(--main-color);
+}
+.minibox{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.minibox{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.frame{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.circle{
+    display: flex;
+    justify-content: center;
+}
+.frame p{
+    text-align: center;
+    font-size: 14px;
+    color: var(--fourth-color);
+}
+.frame h5{
+    text-align: center;
+    font-size: 20px;
+    
+}
 h6{
     font-size: 24px;
-    color: rgb(51, 51, 51);
+    color: var(--fourth-color);
     font-weight: 400;
     margin: 15px 0;
 }
@@ -122,41 +197,44 @@ h6{
     padding-top: 40px;
     gap: 50px;
 }
+
 .main_box {
- display: grid ;
+ display: flex;
  grid-template-columns: 1fr 1fr 1fr;
  padding: 80px;
- grid-gap: 30px;
- justify-content: center;   
+ grid-gap: 30px;  
+ justify-content: center; 
 }
-.main_box_main {
- background-image: url("../img/new_arr_1.jpg");
+.main_box_minorone {
+ background-image: url(../img/new-arrivals-bg.jpg);
  background-size: cover;
  display: block;
  width: 570px;
  height: 375px;
- padding-right: 30px;
+ 
 }
-.box_2 {
- background-image: url("../img/new_ari.png");
+.main_box_minor {
+ background-image: url("../img/trainers-bg.png");
  background-size: cover;
  display: block;
  width: 270px;
  height: 375px;
  
 }
-.box_3 {
- background-image: url("../img/new_arri.jpg");
+.main_box_minortwo {
+ background-image: url("../img/hot-sale-bg.png");
  background-size: cover;
  display: block;
  width: 270px;
  height: 375px;
 }
+
 hr {
     height: 2px;
     width: 18%;
     background-color: #f40106;
  border: 0;
+ 
 } 
 .box_1 p{
  margin-top: 250px;
@@ -191,16 +269,96 @@ hr {
 .box button {
     margin-left: 15px;
 }
+.main_infobox {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+.main_left{
+  background-image: url("../img/about.jpg");
+  background-size: cover;
+}
+.main_right{
+  background-color: var(--fifth-color);
+  padding: 120px 120px 40px 120px;
+  display: flex;
+ font-family: 'Hind Madurai', sans-serif;
+  justify-content: center;
+  flex-direction: column;
+}
+.main_right p{
+    color: var(--main-color);
+    padding: 30px;
+    font-size: 15px;
+}
+.main_right h5{
+    color: var(--main-color);
+    padding: 30px;
+    font-size: 20px;
+}
+.main_right hr{
+    display: flex;
+    
+}
+.main_right h4{
+    color: var(--main-color);
+    padding: 30px;
+    font-size: 30px;
+}
+.main_baner{
+  display: flex;
+justify-content: space-between;
+  max-width: 140px;
+  padding: 0;
+}
+.main_all_product{
+    padding: 10px;
+}
+.main_text_product h2{
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+}
+.main_text_product p{
+display: flex;
+justify-content: center;
+font-size: 15px;
+text-align: center;
+margin-bottom: 30px;
+color: var(--fourth-color);
+}
+.products-list{
+  display: grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr;
+ grid-template-rows: 4fr;
+ width: 980px; 
+}
 
-
-
-
-
-
-
-
-
-
+.product_butom{
+   display: flex;
+   align-items: center;
+    justify-content: center;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 16px;
+  width: 120px;
+  height: 50px;
+  background-color: var(--fifth-color);
+  
+}
+.product_butom:hover{
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+.product {
+    padding: 10px;
+   
+}
+.products {
+    padding: 10px;
+    border: 20px;
+}
 
 
 
@@ -223,13 +381,9 @@ hr {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    
 }
 
-.frame{
-    border-width:1;
-    border-color: rgb(190,190,190);
-    border-style: solid;
-    padding: 10px;
-    }
+
 
     
