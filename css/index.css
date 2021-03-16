@@ -16,12 +16,13 @@
 }
 ul {
   list-style-type: none;
+  
 }
 header .menu a {
     flex-direction: column;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(151, 144, 151);
+    color: var(--main-color);
     padding: 3px;
 }
 
@@ -108,6 +109,7 @@ header .home{
   background-color: #222323;
   cursor: pointer;
 }
+
 .main_box {
  display: flex;
  grid-template-columns: 1fr 1fr 1fr;
@@ -330,11 +332,14 @@ color: var(--fourth-color);
 }
 .products-list{
   display: grid;
-    grid-template-columns: 1fr 1fr  1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
  grid-template-rows: 4fr;
- width: 980px; 
+ padding: 20px;
 }
-
+.products{
+    padding: 10px;
+   
+}
 .product_butom{
    display: flex;
    align-items: center;
@@ -351,17 +356,50 @@ color: var(--fourth-color);
   background-color: var(--secondary-color);
   cursor: pointer;
 }
-.product {
-    padding: 10px;
-   
+.footer{
+    background-color: var(--fifth-color);
 }
-.products {
-    padding: 10px;
-    border: 20px;
+.footer_info{
+  display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+ grid-template-rows: 3;
+ padding: 60px 300px 150px 300px;
+}
+.footer_box_two h2{
+    padding-bottom: 10px;
+    color: var(--main-color);
+
+}
+.footer_box_two li{
+     padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+.footer_box_two a{
+    color: var(--main-color);
+    text-decoration: none;  
+}
+footer .banner{ 
+ color: var(--main-color);
+display: flex;
+flex-direction: row;
+padding-top: 30px;
+}
+.footer_box_thri h2{
+    padding-bottom: 10px;
+}
+.footer_box_thri a{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.footer_box_thri{
+    color: var(--main-color);
 }
 
-
-
+.footer_box_one p{ 
+    padding-right: 30px;
+    color: var(--fourth-color);
+}
 
 
 
