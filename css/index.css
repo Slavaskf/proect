@@ -47,6 +47,7 @@ header .banner {
     flex: 1;
     align-items: center;
     flex-direction: row;
+    max-width: 980px; margin: auto;
 }
 header .home{
     background-image: url(../img/logo.svg);
@@ -237,10 +238,12 @@ hr {
   grid-template-columns: 50% 50%;
   padding-top: 100px;
   padding-bottom: 0;
+  max-width: auto; margin: auto
 }
 .main_left{
   background-image: url("../img/about.jpg");
   background-size: cover;
+
 }
 .main_right{
   background-color: var(--fifth-color);
@@ -362,66 +365,46 @@ padding-top: 30px;
     color: var(--fourth-color);
 }
 
-
-@media (min-width: 500) {
-
-.minibox{
+@media (min-width: 300px) {
+.products-list{
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr  ;
         justify-items: center;
        align-items: center;
     }
-}
-.products-list{
-        display: grid;
-        grid-template-columns: 1fr  ;
-    }
-
-@media (min-width: 600px) {
-.products-list{
-        display: grid;
-        grid-template-columns: 1fr  ;
-    }
-    .main_infobox{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    }
+ 
     .minibox{
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns:  1fr ;
         justify-items: center;
        align-items: center;
+    }
+     
+    .main_infobox{
+    display: grid;
+    grid-template-columns: 1fr ;
+       
     }
   
 }
+
 @media (min-width: 720px) {
  .products-list{
         display: grid;
-        grid-template-columns: 1fr  1fr;
+        grid-template-columns:  1fr;
+        justify-items: center;
+       align-items: center;
+       
     }
     .main_infobox{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr ;
     }
-}
-.minibox{
+    .minibox{
         display: grid;
-        grid-template-columns: 1fr ;
-        justify-items: center;
-       align-items: center;
+        grid-template-columns: 1fr 1fr;
     }
-.main_infobox{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    }
-    .main_box{
- display: flex; 
- justify-content: center;
  }
-
-}
 @media (min-width: 870px) {
     .minibox{
         display: grid;
@@ -430,11 +413,10 @@ padding-top: 30px;
     .main_infobox{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     }
     .products-list{
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns:  1fr 1fr;
     }
     .footer_info{
     display: grid;
@@ -460,6 +442,3 @@ padding-top: 30px;
 }
 
 
-
-
-    
