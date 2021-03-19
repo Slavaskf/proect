@@ -320,49 +320,90 @@ color: var(--fourth-color);
   background-color: var(--secondary-color);
   cursor: pointer;
 }
-.footer{
-    background-color: var(--fifth-color);
-}
-.footer_info{
-  display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
- grid-template-rows: 3;
- padding: 60px 300px 150px 300px;
-}
-.footer_box_two h2{
-    padding-bottom: 10px;
-    color: var(--main-color);
-
-}
-.footer_box_two li{
-     padding-bottom: 10px;
-    padding-top: 10px;
-
-}
-.footer_box_two a{
-    color: var(--main-color);
-    text-decoration: none;  
-}
-footer .banner{ 
- color: var(--main-color);
-display: flex;
-flex-direction: row;
-padding-top: 30px;
-}
-.footer_box_thri h2{
-    padding-bottom: 10px;
-}
-.footer_box_thri a{
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.footer_box_thri{
-    color: var(--main-color);
+.footer-clean {
+  padding:50px 0;
+  background-color: var(--fifth-color);
+  color: var(--main-color);
 }
 
-.footer_box_one p{ 
-    padding-right: 30px;
-    color: var(--fourth-color);
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid var(--main-color);
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
 }
 
 @media (min-width: 300px) {
