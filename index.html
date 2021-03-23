@@ -8,28 +8,63 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="home"></div>
-            <div class="header-bottom">
-                <a class="home" img src="img/logo.jpg" alt="logo" href="index.html">
-                </a>
-                <ul class="menu">
-                    <li><a href="#about_us">About us.</a></li>
-                    <li><a href="#products">Sale.</a></li>
-                    <li><a href="#contacts">Contact us.</a></li>
-                </ul>
-                <div class="banner">
-                    <p><a href="https://www.instagram.com/tetiana_kuzenko/"><img src="img/insta.svg" width="60"
-                                height="50" alt="Instagram logo"></a></p>
-                    <p><a href="https://www.facebook.com/pg/plombirTMJeremy/posts/"><img src="img/face.svg" width="50"
-                                height="50" alt="facebook logo"></a></p>
-                </div>
+    <!-- desktop -->
+    <nav class="menu d-none d-lg-flex justify-content-center">
+        <div class="header_logo me-3">
+            <a class="home" img src="img/logo.jpg" alt="logo" href="index.html"> </a>
+        </div>
+        <div class="d-flex mx-5">
+            <a href="#about_us">About us.</a>
+            <a href="#products">Sale.</a>
+            <a href="#contacts">Contact us.</a>
+
+        </div>
+        <div class="d-flex ms-4">
+            <a href="#order" class="header_button">Request a quote</a>
+            <a class="p-1 mx-2" href="https://www.facebook.">
+                <img class="contact_icon" src="img/face.svg" alt="Facebook">
+            </a>
+            <a class="p-1" href="https://www.instagram.com/">
+                <img class="contact_icon" src="img/insta.svg" alt="Instagram">
+            </a>
+        </div>
+    </nav>
+    <!-- mobile size -->
+    <!-- burger button -->
+    <div class="d-block d-lg-none">
+        <nav class="navbar navbar-light bg-transparent">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
+        <!-- navbar -->
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="d-flex flex-column bg-transparent ms-2 p-2">
+                <a class="text-body text-decoration-none mx-2" href="#about_us">About us.</a>
+                <a class="text-body text-decoration-none mx-2" href="#products">Sale.</a>
+                <a class="text-body text-decoration-none mx-2" href="#contacts">Contact us.</a>
+                <span class="text-muted"></span>
+            </div>
+            <div class="d-flex flex-row ms-2">
+                <a href="#order" class="header_button">Request a quote</a>
+                <a class="p-1 mx-2" href="https://www.facebook.com/oksana.savka.58">
+                    <img class="contact_icon" src="img/face.svg" alt="Facebook">
+                </a>
+                <a class="p-1" href="https://www.instagram.com/">
+                    <img class="contact_icon" src="img/insta.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
     </header>
     <div class="header_banner">
         <div class="container">
@@ -169,10 +204,11 @@
         <footer>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-sm- col-md-3 item">   
-                                 <ul>
+                    <div class="col-sm- col-md-3 item">
+                        <ul>
 
-                            <li><a>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for better.</a></li> 
+                            <li><a>Workout offers fitness clothing and footwear for those who want to change their lives
+                                    and bodies for better.</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
@@ -195,6 +231,9 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 
 

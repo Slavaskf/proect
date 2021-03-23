@@ -18,45 +18,62 @@ ul {
   list-style-type: none;
   
 }
-header .menu a {
+header .menu {
     flex-direction: column;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--main-color);
-    padding: 3px;
 }
 
-header .menu {
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    align-items: center;
-    flex-direction: row;
+@media (min-width: 610px) {
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-top: -5px;
+        padding: 30px 15px;
+        width: 100%;
+    }
 }
-.header-bottom {
-    box-sizing: content-box;
-    padding: 15px 35px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    background-color: var(--fifth-color)     
+
+header .menu a {
+    text-decoration: none;
+    color: var(--third-color);
 }
-header .banner {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-    align-items: center;
-    flex-direction: row;
-    max-width: 980px; margin: auto;
+
+header .menu a:hover {
+    color: var(--secondary-color);
 }
-header .home{
-    background-image: url(../img/logo.svg);
-    background-size: cover;
-    display: flex;
-    width: 210px;
-    height: 49px;
-   
+
+.header_logo {
+   font-family: "Merriweather", sans-serif;
+    font-size: 23px;
+    line-height: 46px;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 50px;
 }
+
+.header_logo h3 {
+   font-family: "Merriweather", sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: end;
+}
+
+.menu {
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
+    color: var(--main-color);
+    font-size: 16px;
+    text-align: center;
+}
+
 .products-list {
     display: grid;
     grid-gap: 0px;
@@ -360,6 +377,7 @@ color: var(--fourth-color);
     text-align:center;
     padding-bottom:20px;
   }
+  
 }
 
 @media (max-width: 768px) {
