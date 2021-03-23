@@ -8,63 +8,29 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/header-7.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/progress.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <!-- desktop -->
-    <nav class="menu d-none d-lg-flex justify-content-center">
-        <div class="header_logo me-3">
-            <a class="home" img src="img/logo.jpg" alt="logo" href="index.html"> </a>
-        </div>
-        <div class="d-flex mx-5">
-            <a href="#about_us">About us.</a>
-            <a href="#products">Sale.</a>
-            <a href="#contacts">Contact us.</a>
 
-        </div>
-        <div class="d-flex ms-4">
-            <a href="#order" class="header_button">Request a quote</a>
-            <a class="p-1 mx-2" href="https://www.facebook.">
-                <img class="contact_icon" src="img/face.svg" alt="Facebook">
-            </a>
-            <a class="p-1" href="https://www.instagram.com/">
-                <img class="contact_icon" src="img/insta.svg" alt="Instagram">
-            </a>
-        </div>
-    </nav>
-    <!-- mobile size -->
-    <!-- burger button -->
-    <div class="d-block d-lg-none">
-        <nav class="navbar navbar-light bg-transparent">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
-        <!-- navbar -->
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="d-flex flex-column bg-transparent ms-2 p-2">
-                <a class="text-body text-decoration-none mx-2" href="#about_us">About us.</a>
-                <a class="text-body text-decoration-none mx-2" href="#products">Sale.</a>
-                <a class="text-body text-decoration-none mx-2" href="#contacts">Contact us.</a>
-                <span class="text-muted"></span>
-            </div>
-            <div class="d-flex flex-row ms-2">
-                <a href="#order" class="header_button">Request a quote</a>
-                <a class="p-1 mx-2" href="https://www.facebook.com/oksana.savka.58">
-                    <img class="contact_icon" src="img/face.svg" alt="Facebook">
-                </a>
-                <a class="p-1" href="https://www.instagram.com/">
-                    <img class="contact_icon" src="img/insta.svg" alt="Instagram">
-                </a>
-            </div>
-        </div>
-    </div>
+    <header class="header">
+        <a href="" class="logo"><img src="img/logo.svg" alt="logo" width="150" height="70"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#about_us"> About us.</a></li>
+            <li><a href="#products">Sale.</a></li>
+            <li><a href="#home">Contact.</a></li>
+            <li><a href="https://uk-ua.facebook.com/"> <img class="contact_icon" src="img/face.svg" width="35"
+                        height="35" alt="Facebook"> </a>
+            <li><a href="https://www.instagram.com/"> <img class="contact_icon" src="img/insta.svg" width="35"
+                        height="35" alt="Instagram"></a></li>
+
+        </ul>
     </header>
     <div class="header_banner">
         <div class="container">
@@ -77,17 +43,17 @@
     </div>
     <main class="main">
         <div class="main_box">
-            <article class="main_box_minorone">
+            <article class="box_a">
                 <p class="main_box_text">Нові Товари<span>.</span></p>
                 <hr>
                 <a class="button_box" href="#products">Товари→</a>
             </article>
-            <article class="main_box_minor">
+            <article class="box_b">
                 <p class="main_box_text">Нові Товари<span>.</span></p>
                 <hr>
                 <a class="button_box" href="#products">Товари→</a>
             </article>
-            <article class="main_box_minortwo">
+            <article class="box_c">
                 <p class="main_box_text">Нові Товари<span>.</span></p>
                 <hr>
                 <a class="button_box" href="#products">Товари→</a>
@@ -119,6 +85,23 @@
                     <p class="text">Оплачуйте замовлення кредитними картками, PayPal, AliPay та іншими способами оплати.
                     </p>
                 </article>
+            </div>
+        </div>
+        <div class="video_container">
+            <div class="video_container_right"></div>
+            <div class="wrapping-tutor">
+                <h1>Opening</h1>
+                <video src="videos/videoplayback.mp4" id="video" class="screen" poster="img/poster.png"></video>
+                <div class="controls">
+                    <button class="btn" id="play">
+                        <i class="fa fa-play fa-2x"></i>
+                    </button>
+                    <button class="btn" id="stop">
+                        <i class="fa fa-stop fa-2x"></i>
+                    </button>
+                    <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0" />
+                    <span class="timestamp" id="timestamp">00:00</span>
+                </div>
             </div>
         </div>
         <div id="about_us"></div>
@@ -231,9 +214,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    <script src="js/index.js" type="module"></script>
+
 </body>
 
 

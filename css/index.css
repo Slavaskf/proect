@@ -18,60 +18,151 @@ ul {
   list-style-type: none;
   
 }
-header .menu {
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: var(--fifth-color);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color:var(--fifth-color);
+}
+
+.header li a {
+  display: block;
+  padding: 10px 10px;
+  border-right: 1px solid var(--fifth-color);
+  text-decoration: none;
+ color: var(--main-color);
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: var(--fifth-color);
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.wrapping-tutor{
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-@media (min-width: 610px) {
-    header nav {
-        display: flex;
-    }
 
-    header .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-right: -10px;
-        margin-left: -10px;
-        margin-top: -5px;
-        padding: 30px 15px;
-        width: 100%;
-    }
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
-header .menu a {
-    text-decoration: none;
-    color: var(--third-color);
+
+
+.header .menu-icon {
+  cursor: pointer;
+  display: flex;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
 }
 
-header .menu a:hover {
-    color: var(--secondary-color);
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
 }
 
-.header_logo {
-   font-family: "Merriweather", sans-serif;
-    font-size: 23px;
-    line-height: 46px;
-    text-align: end;
-    padding-top: 10px;
-    padding-right: 50px;
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
 }
 
-.header_logo h3 {
-   font-family: "Merriweather", sans-serif;
-    font-size: 32px;
-    line-height: 46px;
-    text-align: end;
+.header .menu-icon .navicon:before {
+  top: 5px;
 }
 
-.menu {
-    font-family: "Merriweather", sans-serif;
-    font-weight: 400;
-    color: var(--main-color);
-    font-size: 16px;
-    text-align: center;
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
 .products-list {
@@ -128,36 +219,24 @@ header .menu a:hover {
   cursor: pointer;
 }
 
-.main_box {
- display: flex; 
- padding: 80px;
- grid-gap: 30px;  
- justify-content: center; 
-}
-.main_box_minorone {
- background-image: url(../img/new-arrivals-bg.jpg);
- background-size: cover;
- display: block;
- width: 570px;
- height: 375px;
- 
- 
+body {
+  margin: 40px;
 }
 
-.main_box_minor {
- background-image: url("../img/trainers-bg.png");
- background-size: cover;
- display: block;
- width: 270px;
- height: 375px;
- 
+.main_box{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--fifth-color);
+  color: #444;
 }
-.main_box_minortwo {
- background-image: url("../img/hot-sale-bg.png");
- background-size: cover;
- display: block;
- width: 270px;
- height: 375px;
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
 }
 .button_box {
   display: inline-block;
@@ -253,9 +332,20 @@ hr {
 .main_infobox {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 0;
   max-width: auto; margin: auto
+}
+
+.video_container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 100px;
+  padding-bottom: 0;
+  max-width: auto; margin: auto;
+}
+.wrapping-tutor {
+    background-color: var(--fifth-color);
 }
 .main_left{
   background-image: url("../img/about.jpg");
@@ -431,6 +521,7 @@ color: var(--fourth-color);
         justify-items: center;
        align-items: center;
     }
+    
  
     .minibox{
         display: grid;
